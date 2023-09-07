@@ -1,0 +1,298 @@
+/* ! Global Stlyes */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Bebas+Neue&display=swap');* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: "Bebas Neue", "Barlow", sans-serif;
+}
+/* ? CTA */
+.cta {
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 2rem;
+    padding-bottom: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.cta:hover {
+    opacity: 0.95;
+}
+/* ! Main Element */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 87%;
+    grid-template-areas: 
+    "header"
+    "content";
+    background-image: url("hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* ? Main Header Nav */
+header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo links";
+    grid-area: header;
+    background-color: white;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+}
+.logo > img {
+    width: 35%;
+}
+.header-page-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    grid-area: links;
+    text-decoration: underline;
+}
+.nav-links {
+    color: black;
+}
+/* ? Main Content */
+.main-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 13rem;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    grid-area: content;
+}
+.main-title {
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    color: white;
+}
+.main-subtitle {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+/* ! Aside Element */
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 850px;
+}
+/* ? Location Detail Card */
+.aside-business-text-detail-card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "text text"
+    "location-details location-image";
+    margin: 5rem 10rem 0rem 10rem;
+}
+/* * Center Card Text */
+.business-text-container {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    grid-area: text;
+}
+.business-text-title {
+    font-family: "Barlow", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+}
+.business-text-subtitle {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+    color: black;
+}
+/* * Details */
+.business-detail-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-area: location-details;
+    margin-top: 5rem;
+}
+.business-detail-title {
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: black;
+}
+.business-detail-subtitle {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    line-height: 1.8rem;
+    color: black;
+}
+/* * Business Detail Grid */
+.business-detail-grid {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+.grid-slot p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    margin-left: 1rem;
+}
+.grid-slot {
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+}
+.hour-times {
+    line-height: 2rem;
+}
+/* * Google Maps Image */
+.google-maps-embed {
+    width: 100%;
+    height: 90%;
+    margin-top: 5rem;
+}
+/* ! Services Element */
+.services {
+    width: 100%;
+    height: 750px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4rem;
+}
+.services-text-title {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    border-bottom: 5px solid white;
+}
+/* ? Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "men-haircut buzz-cut scalp-treatment"
+    "beard-trim waxing-services hot-towel-shave"
+    "children-haircut grooming-package color-services";
+    text-align: center;
+    gap: 2rem;
+    width: 75%;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+.services-grid-slot h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+.services-grid-slot p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+.men-haircut {
+    grid-area: men-haircut;
+}
+.buzz-cut {
+    grid-area: buzz-cut;
+}
+.beard-trim {
+    grid-area: beard-trim;
+}
+.hot-towel-shave { 
+    grid-area: hot-towel-shave;
+}
+.children-haircut {
+    grid-area: children-haircut;
+}
+.color-services {
+    grid-area: color-services;
+}
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    background-color: white;
+}
+.footer-container {
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 2rem 0;
+}
+/* ? Links Column */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-grow: 1;
+}
+.social-links-logo {
+    width:50%;
+}
+.social-links-logo img {
+    width: 100%;
+}
+.social-links-social-media {
+    display: flex;
+    gap: 1rem;
+}
+.business-details, .business-details-details-2 {
+    flex-grow: 2;
+}
+.footer-page-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    text-decoration: underline;
+}
